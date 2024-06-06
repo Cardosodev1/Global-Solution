@@ -6,6 +6,19 @@
     <title>Página Inicial</title>
     <link rel="stylesheet" href="css/PaginaInicial.css">
     <link rel="stylesheet" href="css/PaginaDesconto.css">
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "e260d744-602d-4b9b-b759-e779f1398434", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "d1008efe-9b6a-4d6c-ae68-72969b14b231", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
 </head>
 <body>
     <header>
