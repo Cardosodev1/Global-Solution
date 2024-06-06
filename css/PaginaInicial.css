@@ -54,3 +54,63 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .subtitulo h2 {
+        font-size: 1.5em;
+    }
+
+    .conteudo, .conteudo-lista {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .conteudo-lista ol li {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        margin: 8px 0;
+    }
+
+    .subtitulo h2 {
+        font-size: 1.2em;
+    }
+
+    .conteudo, .conteudo-lista {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo-lista ol li {
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .social a {
+        font-size: 18px;
+    }
+}
