@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="css/PaginaInicial.css">
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "e260d744-602d-4b9b-b759-e779f1398434", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "d1008efe-9b6a-4d6c-ae68-72969b14b231", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
 </head>
 <body>
     <header>
@@ -22,7 +35,7 @@
         </section>
         <section class="conteudo">
             <h3>O que é?</h3>
-            <p>A economia azul visa promover um novo sistema econômico longe do conceito de usar e jogar fora continuamente os recursos que a natureza nos oferece. É, portanto, o principal motor para a recuperação dos ecossistemas e para a sensibilização sobre a importância dos recursos dos oceanos.</p>
+            <p>A Economia Azul visa promover um novo sistema econômico longe do conceito de usar e jogar fora continuamente os recursos que a natureza nos oferece. É, portanto, o principal motor para a recuperação dos ecossistemas e para a sensibilização sobre a importância dos recursos dos oceanos.</p>
         </section>
         <section class="conteudo">
             <h3>Qual sua importância?</h3>
